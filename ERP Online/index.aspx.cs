@@ -13,5 +13,42 @@ namespace ERP_Online
         {
 
         }
+
+        private void ShowMessage(string msg)
+        {
+            string g = Guid.NewGuid().ToString("N");
+            if (!ClientScript.IsStartupScriptRegistered(g))
+                ClientScript.RegisterStartupScript(typeof(string), g, "<script>alert('" + msg + "')</script>");
+        }
+
+        protected void _lkAcessar_Click(object sender, EventArgs e)
+        {
+            //Verifica se os campos estão vazios
+            if (String.IsNullOrEmpty(_edUsuario.Text))
+            {
+                ShowMessage("Por favor, Informe o Usuario.");
+                _edUsuario.Focus();
+                return;
+            }
+
+            if (String.IsNullOrEmpty(_edSenha.Text))
+            {
+                ShowMessage("Por favor, Informe a Senha.");
+                _edSenha.Focus();
+                return;
+            }
+
+
+
+            if (_edUsuario.Text.ToUpper().Equals("ADMIN") && _edSenha.Text.Equals("erp@online"))
+            {
+                Session["nomeusuario"] = "ADMIN";
+                Server.Transfer("dashboard.aspx");
+            }
+            else
+            {
+                //FormsAuthentication.HashPasswordForStoringInConfigFile(_edSenha.Text, "md5")
+            }
+        }
     }
 }
