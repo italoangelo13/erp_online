@@ -4,3 +4,9 @@ C:\Projetos\ERP Online\ERP Online\bin\ERP Online.pdb
 C:\Projetos\ERP Online\ERP Online\obj\Debug\ERP Online.csprojResolveAssemblyReference.cache
 C:\Projetos\ERP Online\ERP Online\obj\Debug\ERP Online.dll
 C:\Projetos\ERP Online\ERP Online\obj\Debug\ERP Online.pdb
+C:\Users\Italo e Ana\Desktop\erp_online\ERP Online\bin\ERP Online.dll.config
+C:\Users\Italo e Ana\Desktop\erp_online\ERP Online\bin\ERP Online.dll
+C:\Users\Italo e Ana\Desktop\erp_online\ERP Online\bin\ERP Online.pdb
+C:\Users\Italo e Ana\Desktop\erp_online\ERP Online\obj\Debug\ERP Online.csprojResolveAssemblyReference.cache
+C:\Users\Italo e Ana\Desktop\erp_online\ERP Online\obj\Debug\ERP Online.dll
+C:\Users\Italo e Ana\Desktop\erp_online\ERP Online\obj\Debug\ERP Online.pdb

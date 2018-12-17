@@ -9,7 +9,7 @@
     <link href="assets/fontello/css/animation.css" rel="stylesheet" />
     <link href="assets/fontello/css/fontello.css" rel="stylesheet" />
 </head>
-<body style="background: #87CEEB;">
+<body style="background: url('assets/imgs/background-azul.jpg') top right">
     <form id="form1" runat="server">
         <div class="container-fluid">
             <div class="row" style="margin-top:20px;">

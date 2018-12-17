@@ -102,6 +102,7 @@
     <Content Include="assets\fontello\font\fontello.svg" />
     <Content Include="assets\fontello\LICENSE.txt" />
     <Content Include="assets\fontello\README.txt" />
+    <Content Include="assets\imgs\background-azul.jpg" />
     <Content Include="assets\imgs\erp_online.png" />
     <Content Include="assets\imgs\Logo Faria personalizados.png" />
     <Content Include="assets\imgs\logo.png" />
