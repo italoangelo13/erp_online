@@ -8,7 +8,7 @@
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/fontello/css/animation.css" rel="stylesheet" />
     <link href="assets/fontello/css/fontello.css" rel="stylesheet" />
-
+    <link href="assets/jquery-confirm/jquery-confirm-master/dist/jquery-confirm.min.css" rel="stylesheet" />
     <style>
         html, body {
             height: 100%;
@@ -26,18 +26,18 @@
             justify-content: center;
         }
 
-            .container-fluid {
-                margin-top:50px;
-                width:400px;
-                /*padding: 40px;*/
-                border: 1px solid rgba(0, 0, 0, .3);
-                background: #fff;
-                border-radius: 10px;
-            }
+        .container-fluid {
+            margin-top: 50px;
+            width: 400px;
+            /*padding: 40px;*/
+            border: 1px solid rgba(0, 0, 0, .3);
+            background: #fff;
+            border-radius: 10px;
+        }
 
-            .row{
-                margin-top:10px;
-            }
+        .row {
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body style="background: url('assets/imgs/background-azul.jpg') top right">
@@ -52,18 +52,18 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <img src="assets/imgs/erp_online.png"  width="100%"/>
+                        <img src="assets/imgs/erp_online.png" width="100%" />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <label><i class="icone-user"></i> Usuario</label>
+                        <label><i class="icone-user"></i>Usuario</label>
                         <asp:TextBox ID="_edUsuario" runat="server" CssClass="form-control form-control-lg text-uppercase"></asp:TextBox>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <label><i class="icone-lock"></i> Senha</label>
+                        <label><i class="icone-lock"></i>Senha</label>
                         <asp:TextBox ID="_edSenha" TextMode="Password" runat="server" CssClass="form-control form-control-lg"></asp:TextBox>
                     </div>
                 </div>
@@ -82,5 +82,27 @@
     </form>
     <script src="assets/bootstrap/js/jquery-3.3.1.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/jquery-confirm/jquery-confirm-master/dist/jquery-confirm.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            function msg(mensagem) {
+                $.alert({
+                    title: 'Alerta!',
+                    content: mensagem,
+                });
+            }
+        });
+
+
+        //function msg(mensagem) {
+        //    $.alert({
+        //        title: 'Alerta!',
+        //        content: mensagem,
+        //    });
+        //   }
+        
+    </script>
 </body>
 </html>

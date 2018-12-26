@@ -16,3 +16,9 @@ C:\Projetos_Italo\erp_online\ERP Online\bin\ERP Online.pdb
 C:\Projetos_Italo\erp_online\ERP Online\obj\Debug\ERP Online.csprojResolveAssemblyReference.cache
 C:\Projetos_Italo\erp_online\ERP Online\obj\Debug\ERP Online.dll
 C:\Projetos_Italo\erp_online\ERP Online\obj\Debug\ERP Online.pdb
+C:\Projetos_Italo\erp_online\ERP Online\bin\AjaxControlToolkit.dll
+C:\Projetos_Italo\erp_online\ERP Online\bin\AjaxControlToolkit.HtmlEditor.Sanitizer.dll
+C:\Projetos_Italo\erp_online\ERP Online\bin\BarcodeLib.dll
+C:\Projetos_Italo\erp_online\ERP Online\bin\Microsoft.ReportViewer.WebForms.DLL
+C:\Projetos_Italo\erp_online\ERP Online\bin\MySql.Data.dll
+C:\Projetos_Italo\erp_online\ERP Online\bin\Newtonsoft.Json.dll

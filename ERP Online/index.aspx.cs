@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Script.Services;
+using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -18,7 +20,19 @@ namespace ERP_Online
         {
             string g = Guid.NewGuid().ToString("N");
             if (!ClientScript.IsStartupScriptRegistered(g))
-                ClientScript.RegisterStartupScript(typeof(string), g, "<script>alert('" + msg + "')</script>");
+                ClientScript.RegisterStartupScript(typeof(string), g, "<script>msg('" + msg + "')</script>");
+        }
+
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public bool autenticar(string usuario, string senha)
+        {
+            bool auth = false;
+
+
+
+
+            return auth;
         }
 
         protected void _lkAcessar_Click(object sender, EventArgs e)
