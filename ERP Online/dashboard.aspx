@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>ERP Online</title>
+    <title>SIGNIA ERP</title>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/fontello/css/animation.css" rel="stylesheet" />
     <link href="assets/fontello/css/fontello.css" rel="stylesheet" />

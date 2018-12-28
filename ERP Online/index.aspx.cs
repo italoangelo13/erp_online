@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ERP_Online.Controller;
+using ERP_Online.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -25,14 +27,11 @@ namespace ERP_Online
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public bool autenticar(string usuario, string senha)
+        public UsuarioModel Autenticar(string usuario, string senha)
         {
-            bool auth = false;
-
-
-
-
-            return auth;
+            UsuarioController uc = new UsuarioController();
+            var user = uc.Autenticar(usuario, senha);
+            return user;
         }
 
         protected void _lkAcessar_Click(object sender, EventArgs e)

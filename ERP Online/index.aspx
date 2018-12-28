@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>ERP Online</title>
+    <title>SIGNIA ERP</title>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/fontello/css/animation.css" rel="stylesheet" />
     <link href="assets/fontello/css/fontello.css" rel="stylesheet" />
@@ -52,7 +52,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <img src="assets/imgs/erp_online.png" width="100%" />
+                        <img src="assets/imgs/logo.png" width="100%" />
                     </div>
                 </div>
                 <div class="row">
@@ -69,7 +69,8 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <asp:LinkButton ID="_lkAcessar" CssClass="btn btn-primary btn-block" runat="server" OnClick="_lkAcessar_Click"><i class="icone-monitor"></i> Acessar</asp:LinkButton>
+                        <div class="btn btn-primary btn-block" onclick="autenticarUsuario()" ><i class="icone-monitor"></i> Acessar</div>
+                        <%--<asp:LinkButton ID="_lkAcessar" CssClass="btn btn-primary btn-block" runat="server" OnClick="_lkAcessar_Click"><i class="icone-monitor"></i> Acessar</asp:LinkButton>--%>
                     </div>
                 </div>
                 <div class="row alert-info">
@@ -86,14 +87,39 @@
 
 
     <script>
-        $(document).ready(function () {
-            function msg(mensagem) {
-                $.alert({
-                    title: 'Alerta!',
-                    content: mensagem,
-                });
-            }
-        });
+       
+
+
+
+        function autenticarUsuario() {
+            debugger;
+            var user = $('#_edUsuario').val();
+            var pass = $('#_edSenha').val();
+            var obj = {
+                usuario : user,
+                senha : pass
+            };
+            console.log(JSON.stringify(obj));
+            $.ajax({
+                type: "POST",
+                url: "index.aspx/Autenticar",
+                data: JSON.stringify(obj),
+                contentType: "application/json: charset=utf-8",
+                dataType: "json",
+                async: true,
+                success: function (data) {
+                    console.log(data.d);
+                    var dados = data.d;
+                    alert(dados);
+                },
+                failure: function (response) {
+                    alert(response.d);
+                },
+                error: function (response) {
+                    alert(response.d);
+                },
+            });
+        }
 
 
         //function msg(mensagem) {
